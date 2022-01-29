@@ -1,11 +1,18 @@
 
 import './App.css';
-
+import ImagePreview from './components/ImagePreview';
+import NavBar from './components/NavBar';
+import SideBar from './components/SideBar';
+import { propertyList } from './data/PropertyList';
 function App() {
   return (
     <div className="App">
+      <NavBar />
       <header className="App-header">
-        <h2>Focus360 PWA Mastan</h2>
+        <div className='home-body'>
+          <SideBar properties={propertyList}></SideBar>
+          <ImagePreview properties={propertyList}></ImagePreview>
+        </div>
       </header>
     </div>
   );

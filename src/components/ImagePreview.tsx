@@ -1,19 +1,21 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useContext } from 'react';
+import { Focus360Context } from '../context/context';
 import { ImagePreviewProps } from './common.type';
 
 function ImagePreview({ properties }: ImagePreviewProps) {
 
-    const [currentImage, setcurrentImage] = useState(0);
-
+    //const [currentImage, setcurrentImage] = useState(0);
+    const { currentImage, setcurrentImage } = useContext(Focus360Context);
     const mystyle = {
-        width: "1400px",
-        height: "800px",
-        padding: "2px"
+        width: "100%",
+        height: "100%",
+        padding: "2px",
+        outline: "2px solid black"
     };
 
     const switchImage = () => {
         if (currentImage < properties.length - 1) {
-            setcurrentImage(currentImage + 1);
+            setcurrentImage(() => currentImage + 1);
         } else {
             setcurrentImage(0);
         }

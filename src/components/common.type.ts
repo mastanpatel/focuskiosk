@@ -22,3 +22,8 @@ export type SideBarProps = {
 export type ImagePreviewProps = {
     properties: property[]
 }
+
+export type contextProps = {
+    currentImage: number
+    setcurrentImage: React.Dispatch<React.SetStateAction<number>>
+}

@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { SideBarProps } from './common.type';
 import PropertiesList from './PropertiesList';
 
+
 function SideBar(props: SideBarProps) {
+
 
     return (
         <div className='sidebar'>

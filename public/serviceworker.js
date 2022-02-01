@@ -1,5 +1,7 @@
 const CACHE_NAME = "version-1";
-const urlsToCache = ['index.hmtl', 'offline.html'];
+const urlsToCache = ['index.hmtl', 'offline.html','./images/Properties/Buildings/property-1.jpg'
+,'./images/Properties/Buildings/property-2.jpg', './images/Properties/Buildings/property-3.jpg', './images/Properties/Buildings/property-4.jpg',
+'./images/Properties/Buildings/property-5.jpg', './images/Properties/Buildings/property-6.jpg];','./images/Properties/Buildings/property-7.jpg', './images/Properties/Buildings/property-8.jpg']
 
 //install SW
 self.addEventListener('install', (event) => {
